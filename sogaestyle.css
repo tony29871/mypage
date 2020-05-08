@@ -37,3 +37,19 @@ ol{
     font-size: 25px;
     padding-left: 10%;
 }
+
+.panel-footer{
+    background: lightgreen;
+    color: black;
+    font-family: 'Recipekorea';
+    font-size: 10px;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    width: 100%
+}
+
+.btn-group{
+    color: skyblue;
+    font-family: 'Recipekorea';
+}
