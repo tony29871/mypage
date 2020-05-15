@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 2000px;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        background-color: aquamarine;
+        display: inline-block;
+        position: static;
+    }
+    .a{
+        background-color: red;
+    }
+    .b{
+        background-color: blue;
+        position: relative;
+        top:50px;
+        left:40px;
+    }
+    .c{
+        background-color: yellow;
+        position: fixed; /*화면에서 고정*/
+        right:5px;
+        bottom: 150px;
+    }
+    .d{
+        background-color: green;
+        position: absolute;
+        top: 200px;  /* body 기준*/
+        right: 150px;
+    }
+</style>
+<body>
+    <div class ="box a">a</div>
+    <div class ="box b">b</div>
+    <div class ="box c">c</div>
+    <div class ="box d">d</div>
+</body>
+</html>
+
+<!-- div:(block) 높이 너비를 가짐
+    span : (inline) 한줄로 
+    display: none;  : 화면에 안보임 -없어짐
+    visibility: hidden;  : 크기는 가지나 화면에 안보임
+
+    position: static   : 기본 상태(좌위 -> 오아래)

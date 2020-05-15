@@ -1,6 +1,11 @@
 @font-face { font-family: 'MapoPeacefull'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoPeacefullA.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'Recipekorea'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'fromdamiM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_ten@1.0/fromdamiM.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body{
+    padding-left: 3px;
+    padding-right: 3px;
+}
 h1{
     color: gray;
     font-size: 70px;
@@ -46,10 +51,11 @@ ol{
     text-align: center;
     position: fixed;
     bottom:0;
-    width: 100%
+    width: 97.4%;
+    left: 1.3%;
 }
 
 .btn-group{
-    color: skyblue;
     font-family: 'Recipekorea';
+    display: inline-block;
 }

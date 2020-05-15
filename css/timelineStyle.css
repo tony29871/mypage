@@ -1,0 +1,105 @@
+@font-face { font-family: 'MapoPeacefull'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoPeacefullA.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'fromdamiM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_ten@1.0/fromdamiM.woff') format('woff'); font-weight: normal; font-style: normal; }
+#title{
+    text-align: center;
+    font-family:'fromdamiM';
+    font-size: 40px;
+}
+h1{
+    margin-block-end: 10px;
+}
+body{
+    background-color: lightgreen;
+}
+.line{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 5px;
+    margin-left: -2.5px;
+    height: 150%;
+    background-color: black;
+}
+.content{
+    padding:0 10%;
+    margin-top: 10%;
+}
+img{
+    margin-top:-70%;
+    margin-left:-70%;
+    width: 100px;
+    height:100px;
+    grid-column: 1;
+    border-radius: 100%;
+    border: 2px solid black;
+    z-index: 10;
+}
+.card{
+    position: relative;
+    display: grid;
+    grid-template-columns: 60px auto 30px;
+    grid-template-rows: 10px 30px 30px 30px auto;
+    background-color: aquamarine;
+    width: 40%;
+    margin-bottom: 5%;
+    border: 5px solid green;
+    border-radius: 10% 10% 10% 10% / 20% 20% 20% 20% ;
+    box-shadow: 0px 0px 6px 2px lightblue inset;
+    transition: 0.5s;
+    font-family: 'MapoPeacefull';
+}
+.card:hover{
+    background-color: lightcyan;
+}
+.date{
+    position: relative;
+    margin-left:10%;
+    grid-column: 2;
+}
+.what{
+    position: relative;
+    grid-column: 2;
+}
+.where{
+    position: relative;
+    grid-column: 2;
+}
+.text{
+    position: relative;
+    grid-column: 2;
+}
+.dot{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    right: -27.8%;
+    top: 44%;
+    border-radius: 100%;
+}
+.card:nth-child(even){
+    margin-left: 60%;
+}
+.card:nth-child(even) .dot{
+    left:-27.8%;
+}
+.buttons{
+    text-align: center;
+}
+#topbutton{
+    position: fixed;
+    right:10px;
+    bottom: 20px;
+}
+@media(max-width: 1000px){
+    .dot, .line{
+        display:none;
+    }
+    .card{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .card:nth-child(even){
+        margin-left:10%;
+    }
+}
