@@ -59,3 +59,13 @@ ol{
     font-family: 'Recipekorea';
     display: inline-block;
 }
+
+#lionImg{
+    border-radius: 100%;
+}
+
+#toggle_background{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}

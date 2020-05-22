@@ -10,11 +10,12 @@
 	<title>김재현입니다</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/mypage.css">
-
+	<script src="mypage.js"></script>
 </head>
 <body>
 	<div class="container-fluid">
 		<h1>자기 소개서입니다</h1>
+		<input id="toggle_background" type ="button" value="dark" onclick="value = toggle_backgound(this.value)">
 		<div id="grid">
 			<div id="left">
 				<ul class="nav nav-pills nav-stacked" style="width: 100px; text-align:center">
@@ -48,7 +49,7 @@
 						</ul>
 					</div>
 				</div>
-				<img src="img/lionskku.jpg" style="width: 30%;">
+				<img id="lionImg" src="img/lionskku.jpg" style="width: 30%;">
 			</div>
 		</div>
 		<div class="panel-footer">made by 김재현<br> 멋쟁이사자처럼 8기</div>
