@@ -26,7 +26,7 @@ function toggle_backgound(value){
 function password(){
     let pw = prompt("비밀번호를 입력하세요",'');
     if(pw === '1234'){
-        location.href="profile.html"
+        location.href="profile.html";
     }
     else{
         alert("비밀번호가 틀렸습니다");
